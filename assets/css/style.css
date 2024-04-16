@@ -1,16 +1,24 @@
+/* Estilos globales */
 body {
     background-color: rgb(255, 255, 255);
     padding-top: 3rem;
 }
 
-/* Estilo de Botones*/
+/* Estilos Responsivos */
+@media (max-width: 1250px) {
+    body {
+        padding-top: 7rem;
+    }
+  }
 
+/* Estilo de Botones*/
 .btn {
     border-radius: 0;
 }
 
 .btn-primary {
     background-color: #000;
+    color: white;
     border-color: #544500;
 }
 
@@ -21,7 +29,7 @@ body {
 }
 
 .btn-outline-primary {
-    --bs-btn-color: black;
+    --bs-btn-color: rgb(0, 0, 0);
     --bs-btn-border-color: black;
     --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: #544500;
@@ -43,7 +51,7 @@ body {
 }
 
 /* Cabecera */
-    /* Estilo para el menu */
+/*** Estilo para el menu ***/
 
 .nav-link{
     color: #000;
@@ -57,22 +65,6 @@ body {
     color: green;
 }
 
-/* Footer */
-footer {
-    margin: 60px 0 0 0;
-    background-color: #544500;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(192, 192, 192);
-}
-
-footer a {
-    color: #c74700;
-}
-
-
 /* Página de Inicio */
 .bg-home {
     height: 100vh;
@@ -85,12 +77,11 @@ footer a {
     position: absolute;
     right: 15%;
     left: 15%;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
+    padding: 1.25rem;
     border-radius: 8px;
     color: #fff;
-    text-align: center;
-    background: #00000043;
+    text-align: left;
+    background: #4b300387;
 }
 
 .carousel-caption h1 {
@@ -110,6 +101,30 @@ header {
     margin-top: 100px;
 }
 
+.text-body-secondary {
+    --bs-text-opacity: 0;
+    color: #cfc495 !important;
+}
+
+.featurette {
+    padding: 3.25rem 0;
+}
+
 .galeria img {
     width: 100%;
+}
+
+/* Footer */
+footer {
+    margin: 60px 0 0 0;
+    background-color: #26210b;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(192, 192, 192);
+}
+
+footer a {
+    color: #b29201;
 }
